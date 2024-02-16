@@ -13,6 +13,9 @@ Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'akinsho/toggleterm.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'pmizio/typescript-tools.nvim'
 
 if (has("nvim"))
     Plug 'nvim-lua/plenary.nvim'
@@ -110,7 +113,8 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 \   '*': ['trim_whitespace'],
-\   'javascript': ['eslint']
+\   'javascript': ['eslint'],
+\   'typescript': ['eslint']
 \}
 
 let g:ale_fix_on_save = 1
